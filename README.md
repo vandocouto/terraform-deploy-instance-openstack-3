@@ -23,6 +23,7 @@ variable "instancia" {
 - default : (Total de instância)
 <hr>
 - Deploy:
+
 <pre>
 ./deploy.sh default plan
 ./deploy.sh default apply
