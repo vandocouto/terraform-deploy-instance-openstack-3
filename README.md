@@ -12,5 +12,5 @@ resource "openstack_compute_floatingip_v2" "externa" {
   count = "${var.instancia}"
 }
 </pre>
-- poll  : (Nome da network pública no OpenStack)
+- pool  : (Nome da network pública no OpenStack)
 - count : (Total de instâncias)
