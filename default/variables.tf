@@ -19,7 +19,7 @@ variable "region" {
 }
 
 variable "key_pair" {
-  default = "infra-icasei"
+  default = "infra"
 }
 
 variable "security_group" {

@@ -8,7 +8,7 @@ resource "openstack_compute_instance_v2" "terraform" {
   flavor_name = "${var.flavor}"
   key_pair = "${var.key_pair}"
   count = "${var.instancia}"
-  name = "${format("Docker-Swarm-%02d", (count.index + 1))}"
+  name = "${format("Instancia-%02d", (count.index + 1))}"
   floating_ip = "${element(openstack_compute_floatingip_v2.externa.*.address, count.index)}"
 
   network {
