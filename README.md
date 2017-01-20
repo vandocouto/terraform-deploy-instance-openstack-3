@@ -13,4 +13,11 @@ resource "openstack_compute_floatingip_v2" "externa" {
 }
 </pre>
 - pool  : (Nome da network pública no OpenStack)
-- count : (Total de instâncias)
+- count : (count da variável instância, localizada no arquivo default/variables.tf)
+
+<pre>
+variable "instancia" {
+ default = 3
+}
+</pre>
+- default : (Total de instância)
